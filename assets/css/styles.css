@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #f79a9a;
+    --secondary-color: #eb4d4b;
+    --accent-color: chartreuse;
+}
+
+header {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 15px;
+    }
+
+header h1 {
+    text-align: start;
+    font-size: 48px;
+    font-family: fantasy;
+}
+ 
+body {
+    background-color: var(--primary-color);
+        
+}
+    
+a, a:link, a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color:forestgreen;
+}
+
+nav {
+    padding: 1%;
+    text-align: end;
+}
+    
+nav li {
+    display: inline;
+    font-family: monospace;
+    font-size: 24px;
+    text-align: end;
+    font-weight: bold;
+    margin-right: 8%;
+    padding: 2%;
+}
+.header {
+    display: flex;
+    justify-content:flex-start;
+    margin:5px 10px 15px 20px;
+    height: 25%;
+    width: 25%;
+}
+
+.header h3 {
+    font-size: 40px;
+    color: black;
+    padding: 25px 5px 25px 5px;
+    border-right: solid var(--accent-color) 8px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+    }
+
+#main-pic {
+    width:100%;
+    height: 400px;
+    background-cover: 60% 20%;
+    background-size: cover;
+}
+
+#calculator-app {
+    display: flex;
+    align-self: center;
+    border: solid chartreuse 5px .3;
+    border-style: inset;
+    height: 50vh;
+    width: 50vh;
+}
+
+.box {
+    display:flex;
+    align-self: flex-end;
+    margin-right: -25px;
+    padding: 5%;
+    width: 85%;
+    height: 25%;
+    text-align: center;
+}
+
+#aboutme {
+    align-self: center;
+}
+    
+
