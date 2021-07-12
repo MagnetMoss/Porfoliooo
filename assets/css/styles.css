@@ -113,6 +113,14 @@ nav li {
     margin-bottom: 30px;
 }
 
+.sub {
+    margin-top: 430px;
+    float: right;
+    margin-right: 50px;
+    background: forestgreen;
+    padding: 10px;
+}
+
 #calculator-app {
     display: flex;
     align-self: center;
