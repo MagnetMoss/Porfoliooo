@@ -1,147 +1,170 @@
 :root {
-    --primary-color: #f79a9a;
-    --secondary-color: #eb4d4b;
-    --accent-color: chartreuse;
+  --primary-color: #f79a9a;
+  --secondary-color: #eb4d4b;
+  --accent-color: chartreuse;
 }
 
 header {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
-    width: 100%;
-    padding: 15px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 15px;
+}
 
 header h1 {
-    text-align: start;
-    font-size: 48px;
-    font-family: fantasy;
+  text-align: start;
+  font-size: 48px;
+  font-family: fantasy;
 }
- 
+
 body {
-    background-color: var(--primary-color);
-        
+  background-color: var(--primary-color);
 }
-    
+
 a, a:link, a:visited {
-    text-decoration: none;
-    color:black;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    color:forestgreen;
+  color: forestgreen;
 }
 
 nav {
-    padding: 1%;
-    text-align: end;
+  padding: 1%;
+  text-align: end;
 }
-    
+
 nav li {
-    display: inline;
-    font-family: monospace;
-    font-size: 24px;
-    text-align: end;
-    font-weight: bold;
-    margin-right: 8%;
-    padding: 2%;
+  display: inline-flex;
+  font-family: monospace;
+  font-size: 24px;
+  text-align: end;
+  font-weight: bold;
+  margin-right: 8%;
+  padding: 2%;
 }
+
 .header {
-    display: flex;
-    justify-content:flex-start;
-    margin:5px 10px 15px 20px;
-    height: 25%;
-    width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 10px 15px 20px;
+  height: 25%;
+  width: 25%;
 }
 
 .header h3 {
-    font-size: 40px;
-    color: black;
-    padding: 25px 5px 25px 5px;
-    border-right: solid var(--accent-color) 8px;
+  font-size: 40px;
+  min-width: 15rem;
+  color: black;
+  padding: 25px 5px 25px 5px;
+  border-right: solid var(--accent-color) 8px;
 }
 
 #main {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 25px;
-    }
+  display: flex;
+  flex-direction: column;
+  padding: 50px 25px;
+}
 
 #main-pic {
-    width: 100%;
-    height: 500PX;
-    background-image: url(/assets/images/tech-background.jpg);
-    background-size: 100% 100%;
-    text-align: right;
-    color: black;
-    /* align-items: end; */
+  width: 100%;
+  height: 500px;
+  background-image: url(/assets/images/tech-background.jpg);
+  background-size: 100% 100%;
+  text-align: right;
+  color: black;
+  /* align-items: end; */
 }
 
 #subtitle {
-    margin-top: 430px;
-    float: right;
-    margin-right: 50px;
-    background: red;
-    padding: 10px;
+  margin-top: 430px;
+  float: right;
+  margin-right: 50px;
+  background: red;
+  padding: 10px;
 }
 
 #projects {
-    display:block;
-    background-color: red;
-    height: auto;
-    width:100%; 
+  display: block;
+  background-color: red;
+  height: auto;
+  width: 100%;
 }
 
-#projects aside{
-    float: left;
-    display: block;
-    height: 100%;
-    width:18%;
+#projects aside {
+  float: left;
+  display: block;
+  height: 100%;
+  width: 18%;
 }
 
-.picture-box{
-    float: right;
-    width: 78%;
+.picture-box {
+  float: right;
+  width: 78%;
 }
 
 .pic-holder {
-    width: 50%;
-    height: auto;
-    display: block;
-    float: left;
-    margin-bottom: 30px;
+  width: 50%;
+  height: auto;
+  display: block;
+  float: left;
+  margin-bottom: 30px;
 }
 
 .sub {
-    margin: -50px;
-    float: right;
-    margin-right: 50px;
-    background: forestgreen;
-    padding: 10px;
+  margin: -50px;
+  float: right;
+  margin-right: 50px;
+  background: forestgreen;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
 }
 
 #calculator-app {
-    display: flex;
-    align-self: center;
-    border: solid chartreuse 5px .3;
-    border-style: inset;
-    height: 50vh;
-    width: 50vh;
+  display: flex;
+  align-self: center;
+  border: solid chartreuse 5px 0.3;
+  border-style: inset;
+  height: 50vh;
+  width: 50vh;
 }
 
 .box {
-    display:flex;
-    align-self: flex-end;
-    margin-right: -25px;
-    padding: 5%;
-    width: 85%;
-    height: 25%;
-    text-align: center;
+  display: flex;
+  align-self: flex-end;
+  margin-right: -25px;
+  padding: 5%;
+  width: 85%;
+  height: 25%;
+  text-align: center;
 }
 
 #aboutme {
-    align-self: center;
+  align-self: center;
 }
-    
 
+@media screen and (max-width: 992px) {
+  .box {
+    width: 50%;
+  }
+  #projects {
+    width: 50%;
+  }
+}
+
+/* Cards are stacked on top of each other at 768px or smaller */
+
+@media screen and (max-width: 768px) {
+  .header h3 {
+    font-size: 2rem;
+    min-width: 36vw;
+  }
+  /* Change the header color */
+  /* #projects {
+    min-width: 36vw;
+  } */
+}
