@@ -147,6 +147,11 @@ nav li {
   align-self: center;
 }
 
+#email {
+  width: 100px;
+  height: 75px;
+}
+
 @media screen and (max-width: 992px) {
   .box {
     width: 50%;

@@ -34,14 +34,14 @@ MagnetMoss- Github
 
 ## Features
 
-Weather Dashboard - Password Generator - Lets Settle It
+Weather Dashboard - Password Generator - Lets Settle It - Forever Pig
 
 ## How to Contribute
 
-Not at all.
+No need, but thank you anyways.
 See [Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Tests
 
 not necessary
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+
